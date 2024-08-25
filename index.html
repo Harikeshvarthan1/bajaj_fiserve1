@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Input</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> <!-- Link to your JavaScript file -->
+</head>
+<body>
+
+<div class="container">
+    <h2>Submit JSON Input</h2>
+    <input type="text" id="jsonInput" placeholder='Enter JSON e.g. {"data": ["A","C","z"]}'>
+    <button onclick="submitData()">Submit</button>
+
+    <div class="multi-filter">
+        <select id="filterSelect" multiple>
+            <option value="alphabets">Alphabets</option>
+            <option value="numbers">Numbers</option>
+            <option value="highest_lowercase_alphabet">Highest Lowercase Alphabet</option>
+        </select>
+    </div>
+
+    <div class="response" id="responseDiv"></div>
+</div>
+
+</body>
+</html>
